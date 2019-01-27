@@ -24,11 +24,20 @@ namespace MegDesk_3_JeremyCherriman
             Close();
         }
 
-        private void AddQuote_FormClosing(object sender, FormClosingEventArgs e)
+        // Attempts to have window close button also return to Main Menu. 
+        // *Work in Progress*
+        /*private void AddQuote_FormClosing(object sender, FormClosingEventArgs e)
         {
             var mainMenu = (MainMenu)Tag;
             mainMenu.Show();
             Close();
         }
+        
+        private void AddQuote_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var mainMenu = (MainMenu)Tag;
+            mainMenu.Show();
+            Close();
+        }*/
     }
 }

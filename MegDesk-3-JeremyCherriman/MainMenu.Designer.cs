@@ -97,6 +97,7 @@
             this.Controls.Add(this.searchQuotesBtn);
             this.Controls.Add(this.viewQuotesBtn);
             this.Controls.Add(this.addNewQuoteBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainMenu";

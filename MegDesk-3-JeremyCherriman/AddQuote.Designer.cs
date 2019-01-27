@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddQuote));
             this.clientName = new System.Windows.Forms.TextBox();
             this.deskWidth = new System.Windows.Forms.NumericUpDown();
             this.deskDepth = new System.Windows.Forms.NumericUpDown();
@@ -314,12 +315,12 @@
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.submitBtn);
             this.Controls.Add(this.clientName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Quote - MegaDesk";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddQuote_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.deskWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deskDepth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numberOFDrawers)).EndInit();
