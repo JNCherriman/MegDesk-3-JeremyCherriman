@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.addNewQuoteBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.viewQuotesBtn = new System.Windows.Forms.Button();
+            this.searchQuotesBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.MegaDeskLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.MegaDeskLogo)).BeginInit();
             this.SuspendLayout();
@@ -47,35 +47,35 @@
             this.addNewQuoteBtn.Text = "Add New Quote";
             this.addNewQuoteBtn.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // viewQuotesBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(51, 93);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 50);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "View Quotes";
-            this.button1.UseVisualStyleBackColor = true;
+            this.viewQuotesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewQuotesBtn.Location = new System.Drawing.Point(51, 93);
+            this.viewQuotesBtn.Name = "viewQuotesBtn";
+            this.viewQuotesBtn.Size = new System.Drawing.Size(150, 50);
+            this.viewQuotesBtn.TabIndex = 1;
+            this.viewQuotesBtn.Text = "View Quotes";
+            this.viewQuotesBtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // searchQuotesBtn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(51, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 50);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Search Quotes";
-            this.button2.UseVisualStyleBackColor = true;
+            this.searchQuotesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchQuotesBtn.Location = new System.Drawing.Point(51, 149);
+            this.searchQuotesBtn.Name = "searchQuotesBtn";
+            this.searchQuotesBtn.Size = new System.Drawing.Size(150, 50);
+            this.searchQuotesBtn.TabIndex = 2;
+            this.searchQuotesBtn.Text = "Search Quotes";
+            this.searchQuotesBtn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // exitBtn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(51, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 50);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitBtn.Location = new System.Drawing.Point(51, 212);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(150, 50);
+            this.exitBtn.TabIndex = 3;
+            this.exitBtn.Text = "Exit";
+            this.exitBtn.UseVisualStyleBackColor = true;
             // 
             // MegaDeskLogo
             // 
@@ -92,9 +92,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 311);
             this.Controls.Add(this.MegaDeskLogo);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.searchQuotesBtn);
+            this.Controls.Add(this.viewQuotesBtn);
             this.Controls.Add(this.addNewQuoteBtn);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -109,9 +109,9 @@
         #endregion
 
         private System.Windows.Forms.Button addNewQuoteBtn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button viewQuotesBtn;
+        private System.Windows.Forms.Button searchQuotesBtn;
+        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.PictureBox MegaDeskLogo;
     }
 }
