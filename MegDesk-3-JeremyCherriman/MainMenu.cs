@@ -16,5 +16,15 @@ namespace MegDesk_3_JeremyCherriman
         {
             InitializeComponent();
         }
+
+        private void addNewQuoteBtn_Click(object sender, EventArgs e)
+        {
+
+            AddQuote addNewQuoteForm = new AddQuote();
+            addNewQuoteForm.Tag = this;
+            addNewQuoteForm.Show(this);
+            Hide();
+
+        }
     }
 }

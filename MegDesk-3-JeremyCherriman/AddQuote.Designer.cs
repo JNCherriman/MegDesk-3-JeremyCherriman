@@ -204,6 +204,7 @@
             this.cancelBtn.TabIndex = 14;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // customerName
             // 
@@ -318,6 +319,7 @@
             this.Name = "AddQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Quote - MegaDesk";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddQuote_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.deskWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deskDepth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numberOFDrawers)).EndInit();
